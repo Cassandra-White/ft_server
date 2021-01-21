@@ -1,5 +1,5 @@
 <?php
- /**
+/**
  * The base configuration for WordPress
  *
  * The wp-config.php creation script uses this file during the
@@ -13,7 +13,7 @@
  * * Database table prefix
  * * ABSPATH
  *
- * @link https://codex.wordpress.org/Editing_wp-config.php
+ * @link https://wordpress.org/support/article/editing-wp-config-php/
  *
  * @package WordPress
  */
@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define('AUTH_KEY',         'g~cMvy?V_,/533]s%+%~V3()YM55%[zjL+9@p:H?+}9:Z&VL-9CI-LfzNm]w/#H9');
+define('SECURE_AUTH_KEY',  '-lAY6 |+-PvOnA@!|+gC1zG[2fW53m&#w6nhrMGj-$Ube)TX:Se OFJk;iQjTyp9');
+define('LOGGED_IN_KEY',    'XcaEDjg{Y#5y]:.MJvEkg3L_}ND&9HOe|6^_.+6}SuM,o:>U3QD4iw l=);z]2+T');
+define('NONCE_KEY',        'MvlkdR2CRM@!l~>fB1ETH0hgSZxan5`=i8`D$U?9;OmzLiExPUr730;eo75=J@<x');
+define('AUTH_SALT',        'NSewQN}ABp@XQPZVQxhq|Nkv Tc5m,DG4l/}>1+-BX<QPqJ35*!5-=)n&%TsmCF/');
+define('SECURE_AUTH_SALT', '`xq(:77h7K*^Jy7l00z?S?CcbF+jX%r$]y>j~sFlG<HsE.4%R/9K-*Ld!8jV}rN<');
+define('LOGGED_IN_SALT',   'd<nS8,5:>%0$-!Q+gV(8T[Z0|C4IMyo$5-1Fi*t}u,W~[_4+p>NaKM|X~KtR-O7R');
+define('NONCE_SALT',       'Z{|@`QF14<]g+OTr^-XhUmR`|xoPU]Tc:M;@+fi&^Og$sk,hPD+FJ-p]`^2Sj*m$');
 
 /**#@-*/
 
@@ -68,14 +68,14 @@ $table_prefix = 'wp_';
 /**
  * For developers: WordPress debugging mode.
  *
- * Change this to true to enable the display of notices during development.
+ * Change this to true tao enable the display of notices during development.
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  *
  * For information on other constants that can be used for debugging,
- * visit the Codex.
+ * visit the documentation.
  *
- * @link https://codex.wordpress.org/Debugging_in_WordPress
+ * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
 
@@ -83,8 +83,8 @@ define( 'WP_DEBUG', false );
 
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
+	define( 'ABSPATH', __DIR__ . '/' );
 }
 
 /** Sets up WordPress vars and included files. */
-require_once( ABSPATH . 'wp-settings.php' );
+require_once ABSPATH . 'wp-settings.php';
